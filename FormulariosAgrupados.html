@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">    
+    <title>Formularios Agrupados</title>
+    
+    <style>
+        fieldset{
+            border-radius: 1em;
+            font-size: 25px;
+        }
+    
+    </style>
+    
+</head>
+<body>
+<form action="resultado.php" target="_blank">
+    <fieldset>
+    <legend>Información personal</legend>
+    <p><label>Nombre: <input type="text" name="nombre"></label></p> 
+    </fieldset>
+    <fieldset>
+    <legend>Preferencias</legend>
+    <p>
+    <label><input type="checkbox" name="Deportes">Deportes</label><br>
+    <label><input type="checkbox" name="Videojuegos">Videojuegos</label><br>
+    <label><input type="checkbox" name="Artes">Artes</label><br>
+    <label><input type="checkbox" name="Estudiar">Estudiar</label><br>
+    <label><input type="checkbox" name="Trabajar">Trabajar</label><br>
+    <label><input type="checkbox" name="Comer">Comer</label><br>
+    </p>
+    </fieldset>
+    <input type="submit" value="Enviar la información">
+    
+    
+    
+</form>    
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- Es importante que el meta charset se coloque justo despues de la abertura de la etiqueta head. De este modo nos aseguramos que el navegador conocerá la codificacion de caracteres utilizada antes de que empiece a procesar nada-->
+    <title></title>
+    </head>
+    <body>
+    
+        <!-- action el archivo que tratará los datos target abrirá con página nueva -->
+        <form action="resultado.php" target="_blank">
+        <p>
+        <!-- input type="text" representa a un campo de entrada de texto-->
+            Ingresa tu nombre completo <input type="text" name="nombrecompleto">
+        </p>
+        Deja un mensaje<br>
+        <!--Textarea representa un campo para la entrada de texto multilinea-->
+        <textarea name="mensaje"></textarea>
+        <p>
+            
+            
+            
+        </p>
+        Sexo<br>
+            <!--input type radio" representa una opción que pertenece a un grupo en el que no mas de una opcion puede ser seleccionado al mismo tiempo-->
+            
+        <input type="radio" name="sexo" value="Femenino">Femenino<br>
+        <input type="radio" name="sexo" value="Masculino">Mascullino<br>
+            <br>
+            <p>
+            especialidad:
+            <!--option representa una opcion en un control select o una sugerencia en un elemento datalist-->
+                <select name="especialidad">
+                <option>Programación</option>
+                <option>Construcción</option>
+                <option>Contabilidad</option>
+                <option>ARH</option>
+                <option>Ventas</option>
+                </select>
+        
+            </p>
+            <p>
+            <br>
+                Seleccciona los intereses:<br>
+                <!-- Las casillas de verificación se utilizan para permitir que un usuario seleccione una o más opciones de un número limitado de opciones-->
+                
+                <input type="checkbox" name="peliculas">Peliculas<br>
+                <input type="checkbox" name="Deportes">Deportes<br>
+                <input type="checkbox" name="Videojuegos">Videojuegos<br>
+                <input type="checkbox" name="Artes">Artes<br>
+                <input type="checkbox" name="Estudiar">Estudiar<br>
+                <input type="checkbox" name="Trabajar">Trabajar<br>
+                <input type="checkbox" name="Comer">Comer<br>
+                
+            </p>
+            <p>
+            Selecciona categorias<br>
+                <!--mostrado en una lista despegable de la cual se elige una opción-->
+            <select multiple name="categorias[]">
+             <option value="arte">Arte y entretenimiento</option>    
+             <option value="tv">Television y peliculas</option>
+             <option value="ninos">Niños y adolecentes</option>
+             <option value="hazlotu">Hazlo tu mismo</option>
+                
+                
+            </select>
+            
+            </p>
+            <input type="submit" value="Enviar la información">
+        </form>
+    
+    
+    
+    
+    </body>
